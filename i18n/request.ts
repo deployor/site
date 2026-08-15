@@ -38,6 +38,12 @@ const NAMESPACE_MODULES = {
     hcb: () => import("../messages/namespaces/ru/hcb.json"),
     programs: () => import("../messages/namespaces/ru/programs-team-philanthropy.json"),
   },
+  de: {
+    core: () => import("../messages/namespaces/de/00-core.json"),
+    arcade: () => import("../messages/namespaces/de/arcade.json"),
+    hcb: () => import("../messages/namespaces/de/hcb.json"),
+    programs: () => import("../messages/namespaces/de/programs-team-philanthropy.json"),
+  },
 } as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {

@@ -40,7 +40,13 @@ function isExternal(href: string) {
 
 function LinkCol({ title, links }: { title: string; links: { label: string; href: string }[] }) {
   return (
-    <div style={title === "Resources" || title === "Ресурсы" ? { minWidth: 140 } : undefined}>
+    <div
+      style={
+        title === "Resources" || title === "Ресурсы" || title === "Ressourcen"
+          ? { minWidth: 140 }
+          : undefined
+      }
+    >
       <p style={sectionHeadingStyles}>{title}</p>
       <ul
         style={{
